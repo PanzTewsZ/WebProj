@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <title>CV Alternative Style</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Sarabun', sans-serif;
+            background: linear-gradient(180deg, #f3f4f6 0%, #eef2f6 100%);
+            color: #0f172a;
+        }
+        .container {
+            max-width: 960px;
+            margin: 24px auto;
+            padding: 24px;
+        }
+        .cv-card {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 24px;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+            overflow: hidden;
+        }
+        .sidebar {
+            background: #1e293b;
+            color: #f8fafc;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar h2 {
+            margin: 0 0 12px 0;
+            font-size: 1.3rem;
+        }
+        .profile-block {
+            margin-bottom: 24px;
+        }
+        .profile-block p {
+            margin: 6px 0;
+            line-height: 1.6;
+            color: #e2e8f0;
+        }
+        .sidebar .label {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-top: 18px;
+            letter-spacing: 0.04em;
+        }
+        .sidebar a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .main {
+            padding: 32px 32px 32px 0;
+        }
+        .main header {
+            margin-bottom: 30px;
+        }
+        .main h1 {
+            margin: 0;
+            font-size: 2.4rem;
+            letter-spacing: -0.04em;
+        }
+        .main h3 {
+            margin: 12px 0 0 0;
+            font-size: 1rem;
+            color: #475569;
+            font-weight: 500;
+        }
+        .section {
+            margin-bottom: 28px;
+        }
+        .section h2 {
+            margin: 0 0 12px;
+            font-size: 1.15rem;
+            color: #111827;
+        }
+        .section p,
+        .section ul {
+            margin: 0;
+            color: #334155;
+            line-height: 1.8;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .section li {
+            margin-bottom: 10px;
+        }
+        .button-row {
+            margin-top: 20px;
+        }
+        .button-row a {
+            display: inline-block;
+            margin-right: 16px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: #2563eb;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .button-row a.secondary {
+            background: #94a3b8;
+        }
+        @media (max-width: 760px) {
+            .cv-card {
+                grid-template-columns: 1fr;
+            }
+            .main {
+                padding: 24px;
+            }
+            .sidebar {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article class="cv-card">
+            <aside class="sidebar">
+                <div>
+                    <h2>ข้อมูลส่วนตัว</h2>
+                    <div class="profile-block">
+                        <p><strong>ชื่อ-นามสกุล</strong><br>พัชรพล บุญเหลา</p>
+                        <p><strong>รหัสนิสิต</strong><br>6721601401</p>
+                        <p><strong>หมู่</strong><br>700</p>
+                        <p><strong>สาขา</strong><br>วิทยาการคอมพิวเตอร์</p>
+                        <p><strong>วิชา</strong><br>Interactive Computer Graphics</p>
+                    </div>
+                    <div>
+                        <p class="label">ติดต่อ</p>
+                        <p>มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="label">โปรเจกต์</p>
+                    <p><a href="../Gpu.html" target="_blank">Open Transformation</a></p>
+                    <p><a href="paint.html" target="_blank">Open MyPaint</a></p>
+                </div>
+            </aside>
+            <main class="main">
+                <header>
+                    <h1>Curriculum Vitae</h1>
+                    <h3>หน้ารายละเอียดโปรเจกต์และความสามารถด้านกราฟิก</h3>
+                </header>
+                <section class="section">
+                    <h2>การศึกษาและความเชี่ยวชาญ</h2>
+                    <p>พัฒนาแอปพลิเคชัน HTML Canvas ด้วย JavaScript เพื่อสาธิตการใช้งานกราฟิก 2D รวมถึงใช้โครงสร้างข้อมูลสไปรต์ การแปลงทางเรขาคณิต และการจัดการเมาส์</p>
+                </section>
+                <section class="section">
+                    <h2>สรุปโปรเจกต์</h2>
+                    <ul>
+                        <li>Interactive Computer Graphics: วาดภาพและแปลงสไปรต์บน Canvas พร้อมการควบคุมแบบไดนามิก</li>
+                        <li>MyPaint: โปรแกรมวาดภาพพื้นฐานบน HTML Canvas สามารถใช้เครื่องมือวาดและลบได้</li>
+                    </ul>
+                </section>
+                <section class="section">
+                    <h2>ทักษะ</h2>
+                    <ul>
+                        <li>HTML Canvas</li>
+                        <li>JavaScript</li>
+                        <li>การเรนเดอร์พิกเซลและการจัดการอีเวนต์</li>
+                    </ul>
+                </section>
+                <div class="button-row">
+                    <a href="../Gpu.html" target="_blank">Open Transformation</a>
+                    <a class="secondary" href="paint.html" target="_blank">Open MyPaint</a>
+                </div>
+            </main>
+        </article>
+    </div>
+</body>
+</html>
